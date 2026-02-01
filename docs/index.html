@@ -1,0 +1,402 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="800x800" href="assets/imgs/favicon.png">
+    <link rel="apple-touch-icon" sizes="800x800" href="assets/imgs/favicon.png">
+    <link rel="stylesheet" href="assets/main.css">
+    <script src="assets/main.js" defer></script>
+    <title>ChessWar — L'arène tactique des échecs</title>
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <meta name="description"
+        content="ChessWar transforme les échecs en duel tactique temps réel. Jouez sur le web, ajoutez l'app en mobile, ou téléchargez le pack Windows.">
+</head>
+
+<body>
+    <header class="site-header">
+        <nav class="navbar">
+            <a class="logo" href="#accueil">ChessWar</a>
+            <button class="nav-toggle" aria-controls="primary-nav" aria-expanded="false" aria-label="Ouvrir le menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links" id="primary-nav">
+                <li><a href="#overview" data-nav-link>Aperçu</a></li>
+                <li><a href="#gameplay" data-nav-link>Gameplay</a></li>
+                <li><a href="#modes" data-nav-link>Modes</a></li>
+                <li><a href="#gallery" data-nav-link>Captures</a></li>
+                <li><a href="#design" data-nav-link>Design</a></li>
+                <li><a href="#mobile" data-nav-link>Mobile</a></li>
+                <li><a href="#download" data-nav-link>Télécharger</a></li>
+                <li><a href="#faq" data-nav-link>FAQ</a></li>
+            </ul>
+            <a class="nav-cta button button--primary" href="https://chesswarkward.fr/intro#/intro" target="_blank"
+                rel="noreferrer">Jouer maintenant</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="accueil" class="hero">
+            <div class="hero__content">
+                <p class="eyebrow" data-reveal>Stratégie · Temps réel · Duel tactique</p>
+                <h1 data-reveal>ChessWar<br><span>L'échiquier passe en mode guerre.</span></h1>
+                <p class="lead" data-reveal>
+                    Des échecs accélérés : décisions rapides, pouvoirs tactiques, pression constante.
+                </p>
+                <div class="hero__actions" data-reveal>
+                    <a class="button button--primary" href="https://chesswarkward.fr/intro#/intro" target="_blank"
+                        rel="noreferrer">Jouer sur le web</a>
+                    <a class="button button--ghost" href="#download">Télécharger Windows</a>
+                </div>
+                <div class="hero__stats">
+                    <div class="stat-card" data-reveal style="--delay: 0.1s">
+                        <span class="stat-label">Rythme</span>
+                        <strong>Temps réel</strong>
+                    </div>
+                    <div class="stat-card" data-reveal style="--delay: 0.2s">
+                        <span class="stat-label">Style</span>
+                        <strong>Stratégie + Powers</strong>
+                    </div>
+                    <div class="stat-card" data-reveal style="--delay: 0.3s">
+                        <span class="stat-label">Plateforme</span>
+                        <strong>Web + Windows</strong>
+                    </div>
+                </div>
+            </div>
+            <div class="hero__visual">
+                <figure class="shot shot--primary" data-reveal>
+                    <img src="assets/imgs/chesswar-hero-1.png" alt="Interface de ChessWar pendant un duel"
+                        loading="lazy">
+                    <figcaption>
+                        <span>Combat en direct</span>
+                        <p>Plateau clair, menaces visibles, rythme immédiat.</p>
+                    </figcaption>
+                </figure>
+                <figure class="shot shot--secondary" data-reveal style="--delay: 0.15s">
+                    <img src="assets/imgs/chesswar-hero-2.png" alt="Gestion des pouvoirs dans ChessWar" loading="lazy">
+                    <figcaption>
+                        <span>Pouvoirs tactiques</span>
+                        <p>Boost, shield, rupture : retournez la partie.</p>
+                    </figcaption>
+                </figure>
+                <div class="shot-meta" data-reveal style="--delay: 0.25s">
+                    <p class="meta-title">Session</p>
+                    <p class="meta-value">03:12</p>
+                    <p class="meta-sub">Pression maximale</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="overview" class="section split">
+            <div class="split__content" data-reveal>
+                <p class="eyebrow">Aperçu</p>
+                <h2>Un jeu d'échecs repensé pour l'intensité.</h2>
+                <p>
+                    ChessWar conserve la profondeur des échecs et ajoute vitesse, lecture instantanée et capacités.
+                </p>
+                <div class="tag-list">
+                    <span>Lecture rapide</span>
+                    <span>Pression constante</span>
+                    <span>Progression</span>
+                    <span>Interface claire</span>
+                </div>
+            </div>
+            <div class="split__panel" data-reveal style="--delay: 0.1s">
+                <div class="panel-card">
+                    <h3>Pourquoi ChessWar ?</h3>
+                    <p>Un jeu plus nerveux sans perdre la stratégie.</p>
+                    <div class="panel-list">
+                        <div>
+                            <span class="panel-number">01</span>
+                            <div>
+                                <p class="panel-title">Tempo agressif</p>
+                                <p class="panel-body">Décider vite, punir plus vite.</p>
+                            </div>
+                        </div>
+                        <div>
+                            <span class="panel-number">02</span>
+                            <div>
+                                <p class="panel-title">Pouvoirs maîtrisés</p>
+                                <p class="panel-body">Retourner la partie au bon moment.</p>
+                            </div>
+                        </div>
+                        <div>
+                            <span class="panel-number">03</span>
+                            <div>
+                                <p class="panel-title">Feedback visuel</p>
+                                <p class="panel-body">UI nette, décisions claires.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="gameplay" class="section">
+            <div class="section__header" data-reveal>
+                <p class="eyebrow">Gameplay</p>
+                <h2>Des mécaniques hybrides et nerveuses.</h2>
+                <p>Le plateau devient un terrain d'opérations.</p>
+            </div>
+            <div class="features-grid">
+                <article class="feature-card" data-reveal>
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 64 64" aria-hidden="true">
+                            <path d="M12 18h40v28H12z" fill="none" stroke="currentColor" stroke-width="3" />
+                            <path d="M20 26h24M20 38h24" fill="none" stroke="currentColor" stroke-width="3"
+                                stroke-linecap="round" />
+                        </svg>
+                    </div>
+                    <h3>Échiquier tactique</h3>
+                    <p>Zones d'influence visibles, pression sur les lignes.</p>
+                </article>
+                <article class="feature-card" data-reveal style="--delay: 0.1s">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 64 64" aria-hidden="true">
+                            <path d="M20 46l12-28 12 28" fill="none" stroke="currentColor" stroke-width="3" />
+                            <circle cx="32" cy="20" r="6" fill="none" stroke="currentColor" stroke-width="3" />
+                        </svg>
+                    </div>
+                    <h3>Capacités spéciales</h3>
+                    <p>Boosts, boucliers, ruptures de ligne.</p>
+                </article>
+                <article class="feature-card" data-reveal style="--delay: 0.2s">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 64 64" aria-hidden="true">
+                            <path d="M18 22h28v20H18z" fill="none" stroke="currentColor" stroke-width="3" />
+                            <path d="M24 30h16M24 38h8" fill="none" stroke="currentColor" stroke-width="3"
+                                stroke-linecap="round" />
+                        </svg>
+                    </div>
+                    <h3>IA progressive</h3>
+                    <p>Un entraînement adaptable pour maîtriser les combos.</p>
+                </article>
+                <article class="feature-card" data-reveal style="--delay: 0.3s">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 64 64" aria-hidden="true">
+                            <path d="M32 12l16 10v20L32 52 16 42V22z" fill="none" stroke="currentColor"
+                                stroke-width="3" />
+                            <path d="M32 12v40" fill="none" stroke="currentColor" stroke-width="3" />
+                        </svg>
+                    </div>
+                    <h3>Interface immersive</h3>
+                    <p>HUD minimal, effets précis, rythme visuel clair.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="modes" class="section section--panel">
+            <div class="section__header" data-reveal>
+                <p class="eyebrow">Modes</p>
+                <h2>Choisissez votre terrain de bataille.</h2>
+                <p>Rapide ou stratégique, à vous de fixer le tempo.</p>
+            </div>
+            <div class="modes-grid">
+                <article class="mode-card" data-reveal>
+                    <h3>Campagne tactique</h3>
+                    <p>Scénarios pour maîtriser les mécaniques.</p>
+                    <div class="mode-tags">
+                        <span>Solo</span>
+                        <span>Progression</span>
+                    </div>
+                </article>
+                <article class="mode-card" data-reveal style="--delay: 0.1s">
+                    <h3>Escarmouche rapide</h3>
+                    <p>Partie immédiate, test de combos.</p>
+                    <div class="mode-tags">
+                        <span>Rapide</span>
+                        <span>Custom</span>
+                    </div>
+                </article>
+                <article class="mode-card" data-reveal style="--delay: 0.2s">
+                    <h3>Duel stratégique</h3>
+                    <p>Affrontement direct, précision maximale.</p>
+                    <div class="mode-tags">
+                        <span>Compétitif</span>
+                        <span>1v1</span>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="gallery" class="section">
+            <div class="section__header" data-reveal>
+                <p class="eyebrow">Captures</p>
+                <h2>Des visuels pensés pour la lisibilité.</h2>
+                <p>Interface claire, contrastes marqués, feedback immédiat.</p>
+            </div>
+            <div class="gallery-grid">
+                <figure class="gallery-card" data-reveal>
+                    <img src="assets/imgs/chesswar-hero-1.png" alt="Vue du plateau ChessWar" loading="lazy">
+                    <figcaption>Plateau tactique</figcaption>
+                </figure>
+                <figure class="gallery-card" data-reveal style="--delay: 0.1s">
+                    <img src="assets/imgs/chesswar-hero-2.png" alt="Menu des capacités ChessWar" loading="lazy">
+                    <figcaption>Capacités et stats</figcaption>
+                </figure>
+                <figure class="gallery-card" data-reveal style="--delay: 0.2s">
+                    <img src="assets/imgs/chesswar-ui-1.png" alt="Vue de progression ChessWar" loading="lazy">
+                    <figcaption>Progression & profils</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <section id="design" class="section split design-spotlight">
+            <div class="split__content" data-reveal>
+                <p class="eyebrow">Design</p>
+                <h2>Victoria, graphiste des pièces ChessWar.</h2>
+                <p>
+                    Victoria a designé les pièces de l'app : silhouettes tranchées, détails lisibles,
+                    et une identité graphique alignée avec l'intensité tactique.
+                </p>
+                <div class="tag-list">
+                    <span>Silhouettes lisibles</span>
+                    <span>Contrastes nets</span>
+                    <span>Style futuriste</span>
+                    <span>Clarté en duel</span>
+                </div>
+            </div>
+            <div class="split__panel" data-reveal style="--delay: 0.1s">
+                <div class="panel-card design-card">
+                    <p class="design-label">Crédit artistique</p>
+                    <h3>Victoria · Graphiste</h3>
+                    <p>
+                        Les pièces ont été pensées pour se distinguer instantanément en mouvement,
+                        tout en gardant l'élégance des échecs classiques.
+                    </p>
+                    <div class="design-signature">
+                        <span>Pièces originales</span>
+                        <strong>ChessWar</strong>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="mobile" class="section">
+            <div class="section__header" data-reveal>
+                <p class="eyebrow">Mobile</p>
+                <h2>Transformer ChessWar en app mobile.</h2>
+                <p>Ajoutez l'app à l'écran d'accueil pour jouer en plein écran.</p>
+            </div>
+            <div class="tutorial-grid">
+                <article class="tutorial-card" data-reveal>
+                    <div class="tutorial-icon">iOS</div>
+                    <h3>iPhone (Safari)</h3>
+                    <ol>
+                        <li>Ouvrez ChessWar dans Safari.</li>
+                        <li>Partage → <strong>Sur l'écran d'accueil</strong>.</li>
+                        <li>Validez pour créer l'icône.</li>
+                    </ol>
+                </article>
+                <article class="tutorial-card" data-reveal style="--delay: 0.1s">
+                    <div class="tutorial-icon">Android</div>
+                    <h3>Android (Chrome / Edge)</h3>
+                    <ol>
+                        <li>Ouvrez ChessWar dans le navigateur.</li>
+                        <li>Menu ⋮ → <strong>Installer l'application</strong>.</li>
+                        <li>Lancez en plein écran.</li>
+                    </ol>
+                </article>
+                <article class="tutorial-card" data-reveal style="--delay: 0.2s">
+                    <div class="tutorial-icon">Tips</div>
+                    <h3>Conseils rapides</h3>
+                    <ul>
+                        <li>Jouez en paysage pour plus d'espace.</li>
+                        <li>Gardez une connexion stable.</li>
+                        <li>Autorisez le plein écran.</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <section id="download" class="section download">
+            <div class="section__header" data-reveal>
+                <p class="eyebrow">Téléchargement</p>
+                <h2>Jouer maintenant.</h2>
+                <p>Web instantané ou pack Windows.</p>
+            </div>
+            <div class="download-grid">
+                <article class="download-card" data-reveal>
+                    <span class="badge">Web</span>
+                    <h3>Accès navigateur</h3>
+                    <p>Pas d'installation. Lancer la partie en 1 clic.</p>
+                    <a class="button button--primary" href="https://chesswarkward.fr/intro#/intro" target="_blank"
+                        rel="noreferrer">Ouvrir ChessWar</a>
+                    <p class="download-note">Optimisé pour Chrome / Edge.</p>
+                </article>
+                <article class="download-card download-card--accent" data-reveal style="--delay: 0.1s">
+                    <span class="badge badge--accent">Windows</span>
+                    <h3>Pack ChessWar (.EXE)</h3>
+                    <p>Installation locale, performances maximales.</p>
+                    <a class="button button--ghost" href="assets/WarChess%20Setup%200.0.0.exe" download>Télécharger le
+                        pack</a>
+                    <p class="download-note">Fichier: WarChess Setup 0.0.0.exe</p>
+                    <ul class="requirements">
+                        <li>Windows 10 / 11</li>
+                        <li>4 Go RAM minimum</li>
+                        <li>GPU compatible DirectX</li>
+                    </ul>
+                </article>
+            </div>
+            <div class="download-footer" data-reveal style="--delay: 0.2s">
+                <a class="link" href="https://github.com/AllanVitu/ChessWarV02" target="_blank" rel="noreferrer">Voir le
+                    repo GitHub →</a>
+                <span>Besoin d'un build personnalisé ? Contactez Allan Vitu.</span>
+            </div>
+        </section>
+
+        <section id="faq" class="section faq">
+            <div class="section__header" data-reveal>
+                <p class="eyebrow">FAQ</p>
+                <h2>Questions fréquentes.</h2>
+            </div>
+            <div class="faq-grid">
+                <details data-reveal>
+                    <summary>Le jeu est-il gratuit ?</summary>
+                    <p>La version web est accessible librement.</p>
+                </details>
+                <details data-reveal style="--delay: 0.1s">
+                    <summary>Puis-je jouer hors-ligne ?</summary>
+                    <p>Oui, via le pack Windows.</p>
+                </details>
+                <details data-reveal style="--delay: 0.2s">
+                    <summary>Comment installer le pack .EXE ?</summary>
+                    <p>Téléchargez, exécutez, puis suivez l'assistant.</p>
+                </details>
+                <details data-reveal style="--delay: 0.3s">
+                    <summary>Est-ce que ça marche sur mobile ?</summary>
+                    <p>Oui, ajoutez ChessWar à l'écran d'accueil.</p>
+                </details>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="cta-banner" data-reveal>
+                <div>
+                    <p class="eyebrow">Prêt à entrer dans l'arène ?</p>
+                    <h2>Dominez le plateau dès aujourd'hui.</h2>
+                    <p>Accédez à ChessWar et défiez les meilleures stratégies.</p>
+                </div>
+                <div class="cta-actions">
+                    <a class="button button--primary" href="https://chesswarkward.fr/intro#/intro" target="_blank"
+                        rel="noreferrer">Jouer maintenant</a>
+                    <a class="button button--ghost" href="#download">Télécharger</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>© 2026 Allan Vitu · ChessWar. Tous droits réservés.</p>
+    </footer>
+</body>
+
+</html>
