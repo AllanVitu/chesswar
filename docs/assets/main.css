@@ -929,6 +929,78 @@ section {
   }
 }
 
+@media (max-width: 600px) {
+  main {
+    padding: 1rem 1rem 3rem;
+  }
+
+  section {
+    padding: 3.2rem 0;
+  }
+
+  .site-header {
+    margin: 0.8rem 0.9rem 0;
+  }
+
+  .navbar {
+    padding: 0.85rem 1.1rem;
+  }
+
+  .hero {
+    gap: 2rem;
+  }
+
+  .hero__stats {
+    grid-template-columns: 1fr;
+  }
+
+  .features-grid,
+  .modes-grid,
+  .gallery-grid,
+  .tutorial-grid,
+  .download-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .download-card {
+    padding: 1.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    padding: 1.9rem 1rem;
+    border-radius: 22px;
+  }
+
+  .hero h1 {
+    font-size: clamp(2.2rem, 10vw, 3rem);
+  }
+
+  .hero h1 span {
+    font-size: 0.9rem;
+    letter-spacing: 0.06em;
+  }
+
+  .shot,
+  .shot--secondary {
+    max-width: 100%;
+  }
+
+  .button {
+    width: 100%;
+  }
+
+  .logo {
+    font-size: 0.8rem;
+    letter-spacing: 0.16em;
+  }
+
+  .nav-links a {
+    letter-spacing: 0.18em;
+  }
+}
+
 @media (max-width: 720px) {
   .cta-banner {
     flex-direction: column;
